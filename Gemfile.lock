@@ -203,7 +203,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   factory_bot_rails (~> 6.1)
-  graphiql-rails
+  graphiql-rails (~> 1.7)
   graphql (~> 1.12)
   jbuilder (~> 2.7)
   listen (~> 3.3)

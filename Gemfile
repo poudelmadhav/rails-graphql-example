@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
 
 ruby '2.7.2'
 
@@ -29,6 +29,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'rspec-rails', '~> 5.0'
 end
 
 group :development do
@@ -38,14 +40,10 @@ group :development do
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
+  gem 'graphiql-rails', '~> 1.7'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "graphql", "~> 1.12"
-gem 'graphiql-rails', group: :development
-
-gem "rspec-rails", "~> 5.0", :groups => [:development, :test]
-
-gem "factory_bot_rails", "~> 6.1", :groups => [:development, :test]
+gem 'graphql', '~> 1.12'
